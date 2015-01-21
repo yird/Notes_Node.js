@@ -1,3 +1,3 @@
-# Local Notes App in Node.js
-Simple note taking app in Node.js that deletes when closed
+# Local Note Taking App in Node.js
+
 <img src="img/p1.png">

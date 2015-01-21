@@ -3,13 +3,10 @@
 $('.theform').submit(function(e){
     e.preventDefault();
     var newnote = $('.notetxt').val();
-    $('.notes').append('<a href="#" class="eachnote list-group-item">' + newnote +'</a>');
+    $('<a href="#" class="eachnote list-group-item">' + newnote +'</a>').insertAfter('.firstnote');
     $('.notetxt').val('');
-    $('.firstnote').remove();
+    $('.firstnote').hide();//This hides the (.firstnote) field until the user starting typing
 });
-
-//This hides the (.firstnote) field until the user starting typing
-$('.firstnote').hide();
 
 //Displays whats being typed by listening for key presses
 $('.notetxt').keyup(function() {
